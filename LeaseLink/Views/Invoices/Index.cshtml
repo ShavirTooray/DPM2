@@ -1,0 +1,19 @@
+﻿@model IEnumerable<LeaseLink.Models.Invoice>
+@{
+    ViewData["Title"] = "Invoices";
+}
+<h2>Invoices</h2>
+<table class="table">
+    <thead><tr><th>Period</th><th>Amount</th><th>Due</th><th>Status</th></tr></thead>
+    <tbody>
+        @foreach (var i in Model)
+        {
+            <tr>
+                <td>@i.Period</td>
+                <td>R @i.Amount</td>
+                <td>@i.DueDate</td>
+                <td>@i.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>

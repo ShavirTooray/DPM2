@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\source\\repos\\LeaseLink\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EB302742-6DE6-42BA-912F-50B6047B5CB9}|LeaseLink\\LeaseLink.csproj|c:\\users\\user\\source\\repos\\leaselink\\leaselink\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB302742-6DE6-42BA-912F-50B6047B5CB9}|LeaseLink\\LeaseLink.csproj|solutionrelative:leaselink\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB302742-6DE6-42BA-912F-50B6047B5CB9}|LeaseLink\\LeaseLink.csproj|c:\\users\\user\\source\\repos\\leaselink\\leaselink\\data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB302742-6DE6-42BA-912F-50B6047B5CB9}|LeaseLink\\LeaseLink.csproj|solutionrelative:leaselink\\data\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB302742-6DE6-42BA-912F-50B6047B5CB9}|LeaseLink\\LeaseLink.csproj|c:\\users\\user\\source\\repos\\leaselink\\leaselink\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB302742-6DE6-42BA-912F-50B6047B5CB9}|LeaseLink\\LeaseLink.csproj|solutionrelative:leaselink\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB302742-6DE6-42BA-912F-50B6047B5CB9}|LeaseLink\\LeaseLink.csproj|c:\\users\\user\\source\\repos\\leaselink\\leaselink\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB302742-6DE6-42BA-912F-50B6047B5CB9}|LeaseLink\\LeaseLink.csproj|solutionrelative:leaselink\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB302742-6DE6-42BA-912F-50B6047B5CB9}|LeaseLink\\LeaseLink.csproj|c:\\users\\user\\source\\repos\\leaselink\\leaselink\\controllers\\democontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB302742-6DE6-42BA-912F-50B6047B5CB9}|LeaseLink\\LeaseLink.csproj|solutionrelative:leaselink\\controllers\\democontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB302742-6DE6-42BA-912F-50B6047B5CB9}|LeaseLink\\LeaseLink.csproj|c:\\users\\user\\source\\repos\\leaselink\\leaselink\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EB302742-6DE6-42BA-912F-50B6047B5CB9}|LeaseLink\\LeaseLink.csproj|solutionrelative:leaselink\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\Data\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "LeaseLink\\Data\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\Data\\ApplicationUser.cs",
+              "RelativeToolTip": "LeaseLink\\Data\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T08:19:43.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "LeaseLink\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "LeaseLink\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-09T21:27:45.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DemoController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\Controllers\\DemoController.cs",
+              "RelativeDocumentMoniker": "LeaseLink\\Controllers\\DemoController.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\Controllers\\DemoController.cs",
+              "RelativeToolTip": "LeaseLink\\Controllers\\DemoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T21:26:06.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LeaseLink\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LeaseLink\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-09T21:22:15.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "LeaseLink\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "LeaseLink\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T21:18:20.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DbSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\Data\\DbSeeder.cs",
+              "RelativeDocumentMoniker": "LeaseLink\\Data\\DbSeeder.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\Data\\DbSeeder.cs",
+              "RelativeToolTip": "LeaseLink\\Data\\DbSeeder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T21:10:36.487Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

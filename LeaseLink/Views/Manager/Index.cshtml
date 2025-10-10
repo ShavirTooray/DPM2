@@ -1,0 +1,36 @@
+﻿@model IEnumerable<LeaseLink.Models.RentalApplication>
+@{
+    ViewData["Title"] = "Manager";
+}
+<h2>Applications</h2>
+@if (TempData["Msg"] != null)
+{
+     <div class="alert alert-info">@TempData["Msg"]</div>
+}
+<table class="table">
+    <thead><tr><th>Name</th><th>Email</th><th>Unit</th><th>Status</th><th></th></tr></thead>
+    <tbody>
+        @foreach (var a in Model)
+        {
+            <tr>
+                <td>@a.FullName</td>
+                <td>@a.Email</td>
+                <td>@a.Unit.Property.Name - @a.Unit.Number</td>
+                <td>@a.Status</td>
+                <td>
+                    @if (a.Status == "Submitted")
+                    {
+                        <form asp-action="Approve" method="post" class="d-inline">
+                            <input type="hidden" name="id" value="@a.Id" />
+                            <button class="btn btn-sm btn-success">Approve</button>
+                        </form>
+                        <form asp-action="Reject" method="post" class="d-inline">
+                            <input type="hidden" name="id" value="@a.Id" />
+                            <button class="btn btn-sm btn-danger">Reject</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

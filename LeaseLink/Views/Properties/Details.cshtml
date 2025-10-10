@@ -1,0 +1,9 @@
+﻿@model LeaseLink.Models.Unit
+@{
+    ViewData["Title"] = "Unit Details";
+}
+<h3>@Model.Property.Name — Unit @Model.Number</h3>
+<p><strong>Address:</strong> @Model.Property.Address, @Model.Property.City, @Model.Property.Province</p>
+<p><strong>Monthly Rent:</strong> R @Model.MonthlyRent</p>
+<p>@Model.Description</p>
+<a class="btn btn-success" href="@Url.Action("Create","Applications", new { unitId = Model.Id })">Apply to Rent</a>
