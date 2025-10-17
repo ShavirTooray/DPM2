@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#020B38"
+    tools:context=".DashboardActivity">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Greeting -->
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abeezee"
+        android:text="Hi [User’s Name]"
+        android:textColor="#cbcafe"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/logo"
+        app:layout_constraintBottom_toBottomOf="@id/logo"
+        app:layout_constraintStart_toEndOf="@id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- ===== Rent Card ===== -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rentCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFEFC"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/rentStatusLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rent Status"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rentDueLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rent Due"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/rentStatusLabel"
+            app:layout_constraintTop_toBottomOf="@id/rentStatusLabel"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/rentAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R 12, 000"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/rentDueLabel"
+            app:layout_constraintTop_toBottomOf="@id/rentDueLabel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- ===== Lease Info Card ===== -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/leaseCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#cbcafe"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/rentCard"
+        app:layout_constraintStart_toStartOf="@id/rentCard"
+        app:layout_constraintEnd_toEndOf="@id/rentCard"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/leaseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lease Information"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Row 1: Start Date -->
+        <ImageView
+            android:id="@+id/leaseStartIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/calender"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintStart_toStartOf="@id/leaseTitle"
+            app:layout_constraintTop_toBottomOf="@id/leaseTitle"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/leaseStartValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="June 01, 2025"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/leaseStartIcon"
+            app:layout_constraintTop_toTopOf="@id/leaseStartIcon"
+            android:layout_marginStart="8dp" />
+
+        <!-- Row 2: Duration (with clock icon) -->
+        <ImageView
+            android:id="@+id/leaseDurationIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/clock"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintStart_toStartOf="@id/leaseStartIcon"
+            app:layout_constraintTop_toBottomOf="@id/leaseStartIcon"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/leaseDurationValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 Months"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/leaseDurationIcon"
+            app:layout_constraintTop_toTopOf="@id/leaseDurationIcon"
+            android:layout_marginStart="8dp" />
+
+        <!-- Row 3: End Date (no icon, align to end) -->
+        <TextView
+            android:id="@+id/leaseEndValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="May 31, 2026"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBaseline_toBaselineOf="@id/leaseStartValue" />
+
+        <TextView
+            android:id="@+id/leaseEndLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/leaseEndValue"
+            app:layout_constraintBaseline_toBaselineOf="@id/leaseEndValue"
+            android:layout_marginEnd="6dp" />
+
+        <TextView
+            android:id="@+id/leaseDurationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/leaseDurationValue"
+            app:layout_constraintBaseline_toBaselineOf="@id/leaseDurationValue"
+            android:layout_marginEnd="6dp" />
+
+        <TextView
+            android:id="@+id/leaseStartLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/leaseStartValue"
+            app:layout_constraintBaseline_toBaselineOf="@id/leaseStartValue"
+            android:layout_marginEnd="6dp" />
+
+        <!-- Bottom spacing -->
+        <View
+            android:id="@+id/leaseBottomSpacer"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/leaseDurationValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="12dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- ===== Action Tiles (2x2 grid) ===== -->
+
+    <!-- Submit (top-left) -->
+    <ImageButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/submit"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintTop_toBottomOf="@id/leaseCard"
+        app:layout_constraintStart_toStartOf="@id/leaseCard"
+        app:layout_constraintEnd_toStartOf="@id/btnPayment"
+        app:layout_constraintBottom_toTopOf="@id/btnChatbot"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Payment (top-right) -->
+    <ImageButton
+        android:id="@+id/btnPayment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/payment"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintTop_toTopOf="@id/btnSubmit"
+        app:layout_constraintStart_toEndOf="@id/btnSubmit"
+        app:layout_constraintEnd_toEndOf="@id/leaseCard" />
+
+    <!-- Chatbot (bottom-left) -->
+    <ImageButton
+        android:id="@+id/btnChatbot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/chatbot"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintTop_toBottomOf="@id/btnSubmit"
+        app:layout_constraintStart_toStartOf="@id/leaseCard"
+        app:layout_constraintEnd_toStartOf="@id/btnUpload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Upload (bottom-right) -->
+    <ImageButton
+        android:id="@+id/btnUpload"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/upload"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintTop_toTopOf="@id/btnChatbot"
+        app:layout_constraintStart_toEndOf="@id/btnChatbot"
+        app:layout_constraintEnd_toEndOf="@id/leaseCard"
+        app:layout_constraintBottom_toBottomOf="@id/btnChatbot" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

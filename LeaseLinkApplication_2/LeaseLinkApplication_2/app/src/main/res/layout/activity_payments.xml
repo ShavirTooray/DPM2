@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#020B38">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="105dp"
+        android:layout_height="109dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abeezee"
+        android:text="Make Payment"
+        android:textAlignment="viewStart"
+        android:textColor="#cbcafe"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/imageView6"
+        app:layout_constraintTop_toTopOf="@id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Amount card -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/amountCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFEFC"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView6"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:id="@+id/rentStatusLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount Due"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rentAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R 12, 000"
+            android:textColor="#A98F3C"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rentStatusLabel"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Payment Method label -->
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Method"
+        android:textColor="#B1B1B1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/amountCard"
+        app:layout_constraintTop_toBottomOf="@id/amountCard"
+        android:layout_marginTop="24dp" />
+
+    <!-- Buttons row -->
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#EBE4E4"
+        android:text="Card"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/amountCard"
+        app:layout_constraintTop_toBottomOf="@id/textView25"
+        app:layout_constraintEnd_toStartOf="@+id/button15"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#EBE4E4"
+        android:text="EFT"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/button12"
+        app:layout_constraintTop_toTopOf="@id/button12"
+        app:layout_constraintEnd_toStartOf="@+id/button14"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#EBE4E4"
+        android:text="Other"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/button15"
+        app:layout_constraintTop_toTopOf="@id/button12"
+        app:layout_constraintEnd_toEndOf="@id/amountCard"
+        android:layout_marginStart="8dp" />
+
+    <!-- Upload & Pay -->
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:backgroundTint="#cbcafe"
+        android:text="Upload Proof of Payment"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/amountCard"
+        app:layout_constraintEnd_toEndOf="@id/amountCard"
+        app:layout_constraintTop_toBottomOf="@id/button12"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:backgroundTint="#cbcafe"
+        android:text="Pay Now"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/amountCard"
+        app:layout_constraintEnd_toEndOf="@id/amountCard"
+        app:layout_constraintTop_toBottomOf="@id/button16"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#020B38">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Details"
+        android:textColor="#B1B1B1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Card Number -->
+    <EditText
+        android:id="@+id/cardNumberInput"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:background="#FBFBFB"
+        android:hint="Card Number"
+        android:inputType="number"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="#050303"
+        android:textColorHint="#B1B1B1"
+        app:layout_constraintTop_toBottomOf="@id/textView31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp" />
+
+    <!-- Expiry Date -->
+    <EditText
+        android:id="@+id/cardExpiryInput"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:background="#FFFFFF"
+        android:hint="Expiry Date (MM/YY)"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="#050303"
+        android:textColorHint="#B1B1B1"
+        app:layout_constraintTop_toBottomOf="@id/cardNumberInput"
+        app:layout_constraintStart_toStartOf="@id/cardNumberInput"
+        app:layout_constraintEnd_toEndOf="@id/cardNumberInput"
+        android:layout_marginTop="12dp" />
+
+    <!-- CVV -->
+    <EditText
+        android:id="@+id/cardCVVInput"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:background="#FFFFFF"
+        android:hint="CVV"
+        android:inputType="numberPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="#050303"
+        android:textColorHint="#B1B1B1"
+        app:layout_constraintTop_toBottomOf="@id/cardExpiryInput"
+        app:layout_constraintStart_toStartOf="@id/cardExpiryInput"
+        app:layout_constraintEnd_toEndOf="@id/cardExpiryInput"
+        android:layout_marginTop="12dp" />
+
+    <!-- Pay button -->
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:text="Pay Now"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:backgroundTint="#cbcafe"
+        app:layout_constraintTop_toBottomOf="@id/cardCVVInput"
+        app:layout_constraintStart_toStartOf="@id/cardCVVInput"
+        app:layout_constraintEnd_toEndOf="@id/cardCVVInput"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
