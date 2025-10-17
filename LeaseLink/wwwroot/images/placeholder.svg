@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <style>
+      .bg{fill:#0B0B2A;}            /* navy */
+      .accent{fill:#C9A36B;}        /* beige */
+      .text{fill:#ffffff;font:600 36px system-ui,Segoe UI,Arial;}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="800" rx="24" ry="24"></rect>
+  <g transform="translate(0,20)">
+    <path class="accent" d="M600 190 L860 380 L820 438 L600 278 L380 438 L340 380 Z"></path>
+    <rect class="accent" x="430" y="420" width="340" height="220" rx="12"></rect>
+    <rect class="bg" x="562" y="500" width="76" height="140" rx="6"></rect>
+  </g>
+  <text class="text" x="50%" y="720" text-anchor="middle">No photo available</text>
+</svg>

@@ -1,31 +1,20 @@
-using System.Diagnostics;
+using LeaseLink.Data;
 using Microsoft.AspNetCore.Mvc;
-using LeaseLink.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace LeaseLink.Controllers;
 
-public class HomeController : Controller
+public class HomeController(AppDbContext context) : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly AppDbContext _ctx = context;
 
-    public HomeController(ILogger<HomeController> logger)
-    {
-        _logger = logger;
-    }
+    // Welcome page
+    public IActionResult Index() => View();
 
-    public IActionResult Index()
+    // Browse as a tenant
+    public async Task<IActionResult> Browse()
     {
-        return View();
-    }
-
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        var props = await _ctx.Properties.OrderBy(p => p.MonthlyRent).ToListAsync();
+        return View(props);
     }
 }

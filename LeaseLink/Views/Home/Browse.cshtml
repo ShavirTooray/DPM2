@@ -1,0 +1,53 @@
+﻿@model IEnumerable<LeaseLink.Models.Property>
+@{
+    ViewData["Title"] = "Browse Properties";
+}
+
+<div class="container py-4">
+    <h2 class="mb-4">Available Properties</h2>
+
+    @if (Model == null || !Model.Any())
+    {
+        <div class="alert alert-info">
+            No properties are available right now. Please check back later.
+        </div>
+    }
+    else
+    {
+        <div class="row g-4">
+            @foreach (var p in Model)
+            {
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img class="card-img-top object-fit-cover"
+                             src="@Url.Content(string.IsNullOrWhiteSpace(p.ImageUrl) ? "~/images/property-placeholder.svg" : p.ImageUrl)"
+                             alt="@p.Title"
+                             referrerpolicy="no-referrer"
+                             onerror="this.onerror=null;this.src='@Url.Content("~/images/property-placeholder.svg")';"
+                             style="height:220px;" />
+
+                        <div class="card-body">
+                            <h5 class="card-title mb-2">@p.Title</h5>
+                            <p class="mb-1"><strong>Address:</strong> @p.Address</p>
+                            <p class="mb-1"><strong>Rent:</strong> R @p.MonthlyRent.ToString("N2")</p>
+                            <p class="mb-2"><strong>@p.Bedrooms</strong> bed • <strong>@p.Bathrooms</strong> bath</p>
+                            @if (!string.IsNullOrWhiteSpace(p.Description))
+                            {
+                                <p class="text-muted mb-0">@p.Description</p>
+                            }
+                        </div>
+
+                        <div class="card-footer bg-white border-0">
+                            <a class="btn btn-success w-100"
+                               asp-controller="Applications"
+                               asp-action="Create"
+                               asp-route-propertyId="@p.Id">
+                                Apply Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

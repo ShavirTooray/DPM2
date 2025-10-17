@@ -1,5 +1,14 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\Logo.jpeg
+wwwroot\images\placeholder.svg
+wwwroot\images\properties\family.jpg
+wwwroot\images\properties\garden.jpg
+wwwroot\images\properties\loft.jpg
+wwwroot\images\properties\modern2bed.jpg
+wwwroot\images\properties\studio.jpg
+wwwroot\images\properties\townhouse.jpg
+wwwroot\images\property-placeholder.txt
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

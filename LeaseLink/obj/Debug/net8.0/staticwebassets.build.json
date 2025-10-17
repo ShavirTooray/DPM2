@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "T7v7lypmrdJOuGOCXfEa5PFskSUnFrwAclrGuIKIsoc=",
+  "Hash": "usHE91OYhhsL3+VGhp+UQn5ctM3IygZUa34Xmw3F0Ig=",
   "Source": "LeaseLink",
   "BasePath": "_content/LeaseLink",
   "Mode": "Default",
@@ -1333,8 +1333,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c2tiyv64ts",
-      "Integrity": "pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=",
+      "Fingerprint": "mbqcy3nwkl",
+      "Integrity": "Qs6aUuvFP84HD8dlDgXSVqpNYKohUyt6KB0ZbmWIGUY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1359,6 +1359,195 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\Logo.jpeg",
+      "SourceId": "LeaseLink",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\",
+      "BasePath": "_content/LeaseLink",
+      "RelativePath": "images/Logo#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k4j6ytv89q",
+      "Integrity": "rHM5N6UiagaHP333lSUZoWJGJhBc2U3iNNlsUe/G//o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Logo.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\placeholder.svg",
+      "SourceId": "LeaseLink",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\",
+      "BasePath": "_content/LeaseLink",
+      "RelativePath": "images/placeholder#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h1ys7hrz1s",
+      "Integrity": "q6n4o/IPUDua+x1FOHsQLpKnKd64ZeRgRg3daeQMHcs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\placeholder.svg"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\family.jpg",
+      "SourceId": "LeaseLink",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\",
+      "BasePath": "_content/LeaseLink",
+      "RelativePath": "images/properties/family#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "itfiwhsgn8",
+      "Integrity": "ahupvKVBHRWJgek9xLOTRkrI4RHze6hZ4SlZWzKXJ64=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\properties\\family.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\garden.jpg",
+      "SourceId": "LeaseLink",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\",
+      "BasePath": "_content/LeaseLink",
+      "RelativePath": "images/properties/garden#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jx9rmjmr8q",
+      "Integrity": "+XLyCshzfdLr8ohn/7vMpaZaoUVFl517vtTFfifoE0A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\properties\\garden.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\loft.jpg",
+      "SourceId": "LeaseLink",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\",
+      "BasePath": "_content/LeaseLink",
+      "RelativePath": "images/properties/loft#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "45g6fon1tu",
+      "Integrity": "OBYSJGcnJelXtMYk8s87jJGMlvxIsy4KWY/u6Fn3HRs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\properties\\loft.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\modern2bed.jpg",
+      "SourceId": "LeaseLink",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\",
+      "BasePath": "_content/LeaseLink",
+      "RelativePath": "images/properties/modern2bed#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9dhii3c0up",
+      "Integrity": "k9nOgglIa6W7SJv9K8F80Yj0ciS8RlSIleEhQYK/pB8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\properties\\modern2bed.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\studio.jpg",
+      "SourceId": "LeaseLink",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\",
+      "BasePath": "_content/LeaseLink",
+      "RelativePath": "images/properties/studio#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0jgyigzani",
+      "Integrity": "LMqMhJd/z0U1EHWM+8BXMqkmMTTswLlaEZlhfvE+dM4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\properties\\studio.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\townhouse.jpg",
+      "SourceId": "LeaseLink",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\",
+      "BasePath": "_content/LeaseLink",
+      "RelativePath": "images/properties/townhouse#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8xv46q2fpu",
+      "Integrity": "ZDd5oz0AH5jAPJ3AJEq/R5svoRAoRzwhpA7xkoWh4FM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\properties\\townhouse.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\property-placeholder.txt",
+      "SourceId": "LeaseLink",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\",
+      "BasePath": "_content/LeaseLink",
+      "RelativePath": "images/property-placeholder#[.{fingerprint}]?.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3r8b2a0bt1",
+      "Integrity": "8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\property-placeholder.txt"
     },
     {
       "Identity": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\js\\site.js",
@@ -2581,51 +2770,6 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.c2tiyv64ts.css",
-      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "362"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 09 Oct 2025 17:38:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
-        }
-      ]
-    },
-    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -2636,7 +2780,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "4555"
         },
         {
           "Name": "Content-Type",
@@ -2644,11 +2788,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"Qs6aUuvFP84HD8dlDgXSVqpNYKohUyt6KB0ZbmWIGUY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Oct 2025 17:38:43 GMT"
+          "Value": "Fri, 17 Oct 2025 21:28:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2658,7 +2802,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-Qs6aUuvFP84HD8dlDgXSVqpNYKohUyt6KB0ZbmWIGUY="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.mbqcy3nwkl.css",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4555"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qs6aUuvFP84HD8dlDgXSVqpNYKohUyt6KB0ZbmWIGUY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Oct 2025 21:28:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mbqcy3nwkl"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qs6aUuvFP84HD8dlDgXSVqpNYKohUyt6KB0ZbmWIGUY="
         }
       ]
     },
@@ -4965,6 +5154,744 @@
       ]
     },
     {
+      "Route": "images/Logo.jpeg",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\Logo.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8290"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rHM5N6UiagaHP333lSUZoWJGJhBc2U3iNNlsUe/G//o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Oct 2025 19:55:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rHM5N6UiagaHP333lSUZoWJGJhBc2U3iNNlsUe/G//o="
+        }
+      ]
+    },
+    {
+      "Route": "images/Logo.k4j6ytv89q.jpeg",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\Logo.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8290"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rHM5N6UiagaHP333lSUZoWJGJhBc2U3iNNlsUe/G//o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Oct 2025 19:55:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k4j6ytv89q"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Logo.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rHM5N6UiagaHP333lSUZoWJGJhBc2U3iNNlsUe/G//o="
+        }
+      ]
+    },
+    {
+      "Route": "images/placeholder.h1ys7hrz1s.svg",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\placeholder.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "747"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q6n4o/IPUDua+x1FOHsQLpKnKd64ZeRgRg3daeQMHcs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Oct 2025 20:49:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h1ys7hrz1s"
+        },
+        {
+          "Name": "label",
+          "Value": "images/placeholder.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-q6n4o/IPUDua+x1FOHsQLpKnKd64ZeRgRg3daeQMHcs="
+        }
+      ]
+    },
+    {
+      "Route": "images/placeholder.svg",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\placeholder.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "747"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q6n4o/IPUDua+x1FOHsQLpKnKd64ZeRgRg3daeQMHcs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Oct 2025 20:49:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-q6n4o/IPUDua+x1FOHsQLpKnKd64ZeRgRg3daeQMHcs="
+        }
+      ]
+    },
+    {
+      "Route": "images/properties/family.itfiwhsgn8.jpg",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\family.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3031368"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ahupvKVBHRWJgek9xLOTRkrI4RHze6hZ4SlZWzKXJ64=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Oct 2025 20:36:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "itfiwhsgn8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/properties/family.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ahupvKVBHRWJgek9xLOTRkrI4RHze6hZ4SlZWzKXJ64="
+        }
+      ]
+    },
+    {
+      "Route": "images/properties/family.jpg",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\family.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3031368"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ahupvKVBHRWJgek9xLOTRkrI4RHze6hZ4SlZWzKXJ64=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Oct 2025 20:36:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ahupvKVBHRWJgek9xLOTRkrI4RHze6hZ4SlZWzKXJ64="
+        }
+      ]
+    },
+    {
+      "Route": "images/properties/garden.jpg",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\garden.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4278606"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XLyCshzfdLr8ohn/7vMpaZaoUVFl517vtTFfifoE0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Oct 2025 20:27:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XLyCshzfdLr8ohn/7vMpaZaoUVFl517vtTFfifoE0A="
+        }
+      ]
+    },
+    {
+      "Route": "images/properties/garden.jx9rmjmr8q.jpg",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\garden.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4278606"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+XLyCshzfdLr8ohn/7vMpaZaoUVFl517vtTFfifoE0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Oct 2025 20:27:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jx9rmjmr8q"
+        },
+        {
+          "Name": "label",
+          "Value": "images/properties/garden.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+XLyCshzfdLr8ohn/7vMpaZaoUVFl517vtTFfifoE0A="
+        }
+      ]
+    },
+    {
+      "Route": "images/properties/loft.45g6fon1tu.jpg",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\loft.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2208844"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OBYSJGcnJelXtMYk8s87jJGMlvxIsy4KWY/u6Fn3HRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Oct 2025 20:30:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "45g6fon1tu"
+        },
+        {
+          "Name": "label",
+          "Value": "images/properties/loft.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OBYSJGcnJelXtMYk8s87jJGMlvxIsy4KWY/u6Fn3HRs="
+        }
+      ]
+    },
+    {
+      "Route": "images/properties/loft.jpg",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\loft.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2208844"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OBYSJGcnJelXtMYk8s87jJGMlvxIsy4KWY/u6Fn3HRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Oct 2025 20:30:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OBYSJGcnJelXtMYk8s87jJGMlvxIsy4KWY/u6Fn3HRs="
+        }
+      ]
+    },
+    {
+      "Route": "images/properties/modern2bed.9dhii3c0up.jpg",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\modern2bed.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1725891"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k9nOgglIa6W7SJv9K8F80Yj0ciS8RlSIleEhQYK/pB8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Oct 2025 20:28:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9dhii3c0up"
+        },
+        {
+          "Name": "label",
+          "Value": "images/properties/modern2bed.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k9nOgglIa6W7SJv9K8F80Yj0ciS8RlSIleEhQYK/pB8="
+        }
+      ]
+    },
+    {
+      "Route": "images/properties/modern2bed.jpg",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\modern2bed.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1725891"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k9nOgglIa6W7SJv9K8F80Yj0ciS8RlSIleEhQYK/pB8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Oct 2025 20:28:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-k9nOgglIa6W7SJv9K8F80Yj0ciS8RlSIleEhQYK/pB8="
+        }
+      ]
+    },
+    {
+      "Route": "images/properties/studio.0jgyigzani.jpg",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\studio.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1670818"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LMqMhJd/z0U1EHWM+8BXMqkmMTTswLlaEZlhfvE+dM4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Oct 2025 21:03:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0jgyigzani"
+        },
+        {
+          "Name": "label",
+          "Value": "images/properties/studio.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LMqMhJd/z0U1EHWM+8BXMqkmMTTswLlaEZlhfvE+dM4="
+        }
+      ]
+    },
+    {
+      "Route": "images/properties/studio.jpg",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\studio.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1670818"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LMqMhJd/z0U1EHWM+8BXMqkmMTTswLlaEZlhfvE+dM4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Oct 2025 21:03:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LMqMhJd/z0U1EHWM+8BXMqkmMTTswLlaEZlhfvE+dM4="
+        }
+      ]
+    },
+    {
+      "Route": "images/properties/townhouse.8xv46q2fpu.jpg",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\townhouse.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2444685"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZDd5oz0AH5jAPJ3AJEq/R5svoRAoRzwhpA7xkoWh4FM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Oct 2025 21:04:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8xv46q2fpu"
+        },
+        {
+          "Name": "label",
+          "Value": "images/properties/townhouse.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZDd5oz0AH5jAPJ3AJEq/R5svoRAoRzwhpA7xkoWh4FM="
+        }
+      ]
+    },
+    {
+      "Route": "images/properties/townhouse.jpg",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\townhouse.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2444685"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZDd5oz0AH5jAPJ3AJEq/R5svoRAoRzwhpA7xkoWh4FM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Oct 2025 21:04:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZDd5oz0AH5jAPJ3AJEq/R5svoRAoRzwhpA7xkoWh4FM="
+        }
+      ]
+    },
+    {
+      "Route": "images/property-placeholder.3r8b2a0bt1.txt",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\property-placeholder.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 10:03:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3r8b2a0bt1"
+        },
+        {
+          "Name": "label",
+          "Value": "images/property-placeholder.txt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="
+        }
+      ]
+    },
+    {
+      "Route": "images/property-placeholder.txt",
+      "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\property-placeholder.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 10:03:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -5069,7 +5996,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Oct 2025 21:14:16 GMT"
+          "Value": "Fri, 17 Oct 2025 19:26:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5106,7 +6033,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Oct 2025 21:14:16 GMT"
+          "Value": "Fri, 17 Oct 2025 19:26:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5151,7 +6078,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Oct 2025 21:14:16 GMT"
+          "Value": "Fri, 17 Oct 2025 19:26:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5196,7 +6123,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 09 Oct 2025 21:14:16 GMT"
+          "Value": "Fri, 17 Oct 2025 19:26:15 GMT"
         },
         {
           "Name": "Cache-Control",

@@ -13,6 +13,42 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\Logo.jpeg",
+      "PackagePath": "staticwebassets\\images\\Logo.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\placeholder.svg",
+      "PackagePath": "staticwebassets\\images\\placeholder.svg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\family.jpg",
+      "PackagePath": "staticwebassets\\images\\properties\\family.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\garden.jpg",
+      "PackagePath": "staticwebassets\\images\\properties\\garden.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\loft.jpg",
+      "PackagePath": "staticwebassets\\images\\properties\\loft.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\modern2bed.jpg",
+      "PackagePath": "staticwebassets\\images\\properties\\modern2bed.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\studio.jpg",
+      "PackagePath": "staticwebassets\\images\\properties\\studio.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\properties\\townhouse.jpg",
+      "PackagePath": "staticwebassets\\images\\properties\\townhouse.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\images\\property-placeholder.txt",
+      "PackagePath": "staticwebassets\\images\\property-placeholder.txt"
+    },
+    {
       "Id": "C:\\Users\\USER\\source\\repos\\LeaseLink\\LeaseLink\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

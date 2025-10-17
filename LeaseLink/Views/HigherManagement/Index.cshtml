@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Higher Management Dashboard";
+}
+<div class="container py-4">
+    <h2>Higher Management Dashboard</h2>
+    <div class="list-group">
+        <a class="list-group-item list-group-item-action">Portfolio Overview</a>
+        <a class="list-group-item list-group-item-action">Reports</a>
+    </div>
+    <form method="post" asp-controller="Account" asp-action="Logout" class="mt-3">
+        @Html.AntiForgeryToken()
+        <button class="btn btn-outline-danger">Logout</button>
+    </form>
+</div>

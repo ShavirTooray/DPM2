@@ -1,36 +1,14 @@
-﻿@model IEnumerable<LeaseLink.Models.RentalApplication>
-@{
-    ViewData["Title"] = "Manager";
+﻿@{
+    ViewData["Title"] = "Manager Dashboard";
 }
-<h2>Applications</h2>
-@if (TempData["Msg"] != null)
-{
-     <div class="alert alert-info">@TempData["Msg"]</div>
-}
-<table class="table">
-    <thead><tr><th>Name</th><th>Email</th><th>Unit</th><th>Status</th><th></th></tr></thead>
-    <tbody>
-        @foreach (var a in Model)
-        {
-            <tr>
-                <td>@a.FullName</td>
-                <td>@a.Email</td>
-                <td>@a.Unit.Property.Name - @a.Unit.Number</td>
-                <td>@a.Status</td>
-                <td>
-                    @if (a.Status == "Submitted")
-                    {
-                        <form asp-action="Approve" method="post" class="d-inline">
-                            <input type="hidden" name="id" value="@a.Id" />
-                            <button class="btn btn-sm btn-success">Approve</button>
-                        </form>
-                        <form asp-action="Reject" method="post" class="d-inline">
-                            <input type="hidden" name="id" value="@a.Id" />
-                            <button class="btn btn-sm btn-danger">Reject</button>
-                        </form>
-                    }
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+<div class="container py-4">
+    <h2 class="text-white mb-4">Property Manager</h2>
+    <div class="row g-3">
+        <div class="col-md-4"><a class="btn btn-ll-beige w-100 py-3">Dashboard View</a></div>
+        <div class="col-md-4"><a class="btn btn-ll-beige w-100 py-3">Update Listings</a></div>
+        <div class="col-md-4"><a class="btn btn-ll-beige w-100 py-3">Manage Leases</a></div>
+        <div class="col-md-4"><a class="btn btn-ll-beige w-100 py-3">Respond to AI Escalations</a></div>
+        <div class="col-md-4"><a class="btn btn-ll-beige w-100 py-3">Send Reminders</a></div>
+        <div class="col-md-4"><a class="btn btn-ll-outline-navy w-100 py-3" asp-controller="Account" asp-action="Logout">Log out</a></div>
+    </div>
+</div>
