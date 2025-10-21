@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#020B38">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvApplyNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="APPLY NOW"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the following details to apply for property rental."
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Section: Personal Details -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Details"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Full Name & ID -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/FullName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#9AFFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Full Name"
+                android:paddingHorizontal="8dp"
+                android:textColor="#050303"
+                android:textColorHint="#232222" />
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/idNumber"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#9AFFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="ID Number"
+                android:paddingHorizontal="8dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#232222" />
+        </LinearLayout>
+
+        <!-- Email & Phone -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/emailEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#9AFFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Email"
+                android:paddingHorizontal="8dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#232222" />
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/phoneEdit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#9AFFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Phone Number"
+                android:paddingHorizontal="8dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#232222" />
+        </LinearLayout>
+
+        <!-- Section: Current Property -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Property"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/addressEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9AFFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Full Address"
+            android:paddingHorizontal="8dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#232222" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/postalCodeEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9AFFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Postal Code"
+                android:paddingHorizontal="8dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#232222" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="24dp">
+
+                <RadioButton
+                    android:layout_height="21dp"
+                    android:buttonTint="#A98F3C"
+                    android:text="Owned Property"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:layout_height="22dp"
+                    android:buttonTint="#A98F3C"
+                    android:text="Rented Property"
+                    android:textColor="#FFFFFF" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Section: Employment Information -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employment Information"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/jobTitleEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#9AFFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Job Title"
+            android:paddingHorizontal="8dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#232222" />
+
+        <EditText
+            android:id="@+id/employerEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#9AFFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Employer"
+            android:paddingHorizontal="8dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#232222" />
+
+        <EditText
+            android:id="@+id/contactEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9AFFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Contact Information"
+            android:paddingHorizontal="8dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#232222" />
+
+        <!-- Section: Property Application -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Property Application"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/propertyNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#9AFFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Name of property you are interested in"
+            android:paddingHorizontal="8dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#232222"
+            android:textSize="16sp" />
+
+        <!-- Section: Upload Documents -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Documents"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/uploadEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload any supporting documents that would make the application process run smoothly"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etUpload"
+                android:layout_width="0dp"
+                android:layout_height="23dp"
+                android:layout_weight="1"
+                android:background="#9AFFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Eg: Payslips, proof of residence, etc."
+                android:paddingHorizontal="8dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#232222"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/uploadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="UPLOAD"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#A98F3C"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Apply Button -->
+        <Button
+            android:id="@+id/btnApply"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#A98F3C"
+            android:text="APPLY"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

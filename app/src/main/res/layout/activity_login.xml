@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#020B38">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="24dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abeezee"
+            android:text="Login"
+            android:textAlignment="textStart"
+            android:textColor="#cbcafe"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/imageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imageView4"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp" />
+
+        <!-- USERNAME label -->
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abeezee"
+            android:text="USERNAME"
+            android:textAlignment="center"
+            android:textColor="#B1B1B1"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/imageView4"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp" />
+
+        <!-- Username input -->
+        <EditText
+            android:id="@+id/editTextText7"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@id/textView17"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- PASSWORD label -->
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abeezee"
+            android:text="PASSWORD"
+            android:textAlignment="center"
+            android:textColor="#B1B1B1"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/editTextText7"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- Password input -->
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@id/textView18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- RECONFIRM PASSWORD label -->
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abeezee"
+            android:text="RECONFIRM PASSWORD"
+            android:textAlignment="center"
+            android:textColor="#B1B1B1"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/editTextTextPassword2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- Reconfirm password input -->
+        <EditText
+            android:id="@+id/editTextTextPassword3"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@id/textView19"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Options helper text -->
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abeezee"
+            android:text="SELECT ONE OF THE OPTIONS BELOW"
+            android:textAlignment="center"
+            android:textColor="#B1B1B1"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/editTextTextPassword3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp" />
+
+        <!-- Radio options in a 2-column grid -->
+
+        <!-- Left column: CURRENT TENANT, ADMIN -->
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CURRENT TENANT"
+            android:textColor="#908F8F"
+            app:layout_constraintTop_toBottomOf="@id/textView20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/radioButton"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ADMIN"
+            android:textColor="#908F8F"
+            app:layout_constraintTop_toBottomOf="@id/radioButton2"
+            app:layout_constraintStart_toStartOf="@id/radioButton2"
+            app:layout_constraintEnd_toEndOf="@id/radioButton2"
+            android:layout_marginTop="8dp" />
+
+        <!-- Right column: PROSPECTIVE TENANT, MANAGER -->
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="PROSPECTIVE TENANT"
+            android:textColor="#908F8F"
+            app:layout_constraintTop_toTopOf="@id/radioButton2"
+            app:layout_constraintStart_toEndOf="@id/radioButton2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="MANAGER"
+            android:textColor="#908F8F"
+            app:layout_constraintTop_toBottomOf="@id/radioButton"
+            app:layout_constraintStart_toStartOf="@id/radioButton"
+            app:layout_constraintEnd_toEndOf="@id/radioButton"
+            android:layout_marginTop="8dp" />
+
+        <!-- Third row centered: GENERAL MANAGER -->
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GENERAL MANAGER"
+            android:textColor="#908F8F"
+            app:layout_constraintTop_toBottomOf="@id/radioButton3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Login button -->
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:backgroundTint="#A98F3C"
+            android:text="Login"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/radioButton5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp" />
+
+        <!-- Spacer to ensure button isn't clipped on small screens -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="8dp"
+            app:layout_constraintTop_toBottomOf="@id/button3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

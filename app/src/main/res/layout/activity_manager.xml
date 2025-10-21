@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#020B38"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <!-- Logo (top-left) -->
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textViewManagerTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Manager"
+        android:textColor="#cbcafe"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        app:layout_constraintStart_toEndOf="@id/imageView18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageView18"
+        app:layout_constraintBottom_toBottomOf="@id/imageView18"
+        android:layout_marginStart="12dp" />
+
+    <!-- Row 1: Send Broadcast / Send Reminder -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSendBroadcast"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:text="Send Broadcast"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#cbcafe"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toStartOf="@id/buttonSendReminder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView18" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSendReminder"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:text="Send Reminder"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#cbcafe"
+        app:cornerRadius="16dp"
+        app:layout_constraintTop_toTopOf="@id/buttonSendBroadcast"
+        app:layout_constraintStart_toEndOf="@id/buttonSendBroadcast"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <!-- Row 2: Update Listings / Settings -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonUpdateListings"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:text="Update Listings"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#cbcafe"
+        app:cornerRadius="16dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonSendBroadcast"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonSettings"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSettings"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:text="Settings"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:backgroundTint="#cbcafe"
+        app:cornerRadius="16dp"
+        app:layout_constraintTop_toTopOf="@id/buttonUpdateListings"
+        app:layout_constraintStart_toEndOf="@id/buttonUpdateListings"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <!-- Bottom spacer -->
+    <View
+        android:id="@+id/bottomSpacerManager"
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonUpdateListings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
