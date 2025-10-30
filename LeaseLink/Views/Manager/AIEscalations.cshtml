@@ -1,0 +1,46 @@
+﻿@model IEnumerable<LeaseLink.Controllers.AiEscalationVm>
+@{
+    ViewData["Title"] = "Manager • AI Escalations";
+}
+<div class="container py-4">
+    <h2 class="text-white mb-3">AI Escalations</h2>
+
+    @if (TempData["Success"] is string ok)
+    {
+        <div class="alert alert-success">@ok</div>
+    }
+
+    <div class="table-responsive">
+        <table class="table table-dark table-striped align-middle">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Summary</th>
+                    <th>Priority</th>
+                    <th>Suggested Action</th>
+                    <th style="width:160px;">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var e in Model)
+                {
+                    <tr>
+                        <td>@e.Id</td>
+                        <td>@e.Summary</td>
+                        <td>@e.Priority</td>
+                        <td>@e.SuggestedAction</td>
+                        <td>
+                            <form asp-action="ApplyAiAction" method="post" class="d-inline">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@e.Id" />
+                                <button class="btn btn-ll-beige btn-sm">Apply</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <a asp-action="Index" class="btn btn-ll-outline-navy mt-2">Back</a>
+</div>

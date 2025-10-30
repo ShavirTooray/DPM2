@@ -1,0 +1,46 @@
+﻿@model LeaseLink.Controllers.MaintenanceRequestVm
+@{
+    ViewData["Title"] = "Tenant • Maintenance Request";
+}
+
+<div class="container py-4">
+    <h2 class="text-white mb-3">Submit Maintenance Request</h2>
+
+    @if (TempData["Success"] is string msg)
+    {
+        <div class="alert alert-success">@msg</div>
+    }
+
+    <form asp-action="Maintenance" method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken()
+
+        <div class="mb-3">
+            <label asp-for="Category" class="form-label text-white"></label>
+            <select asp-for="Category" class="form-select">
+                <option>Plumbing</option>
+                <option>Electrical</option>
+                <option>Appliances</option>
+                <option>General Repairs</option>
+            </select>
+            <span asp-validation-for="Category" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label text-white"></label>
+            <textarea asp-for="Description" rows="4" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Photo" class="form-label text-white"></label>
+            <input asp-for="Photo" type="file" class="form-control" accept="image/*" />
+        </div>
+
+        <button class="btn btn-ll-beige">Submit</button>
+        <a asp-action="Index" class="btn btn-ll-outline-navy ms-2">Back</a>
+    </form>
+</div>
+
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+ }

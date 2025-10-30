@@ -1,0 +1,54 @@
+﻿@model LeaseLink.Controllers.ReminderVm
+@{
+    ViewData["Title"] = "Manager • Reminders";
+}
+<div class="container py-4">
+    <h2 class="text-white mb-3">Send Reminders</h2>
+
+    @if (TempData["Success"] is string ok)
+    {
+        <div class="alert alert-success">@ok</div>
+    }
+
+    <form asp-action="Reminders" method="post" class="row gy-3">
+        @Html.AntiForgeryToken()
+
+        <div class="col-md-4">
+            <label asp-for="Target" class="form-label text-white"></label>
+            <select asp-for="Target" class="form-select">
+                <option>All Tenants</option>
+                <option>Late Rent</option>
+                <option>Expiring Lease</option>
+                <option>Custom</option>
+            </select>
+            <span asp-validation-for="Target" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-8">
+            <label asp-for="Subject" class="form-label text-white"></label>
+            <input asp-for="Subject" class="form-control" />
+            <span asp-validation-for="Subject" class="text-danger"></span>
+        </div>
+
+        <div class="col-12">
+            <label asp-for="Message" class="form-label text-white"></label>
+            <textarea asp-for="Message" class="form-control" rows="6"></textarea>
+            <span asp-validation-for="Message" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-4">
+            <label asp-for="ScheduleFor" class="form-label text-white">Schedule</label>
+            <input asp-for="ScheduleFor" class="form-control" />
+            <span asp-validation-for="ScheduleFor" class="text-danger"></span>
+        </div>
+
+        <div class="col-12">
+            <button class="btn btn-ll-beige">Send</button>
+            <a asp-action="Index" class="btn btn-ll-outline-navy ms-2">Back</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+ }

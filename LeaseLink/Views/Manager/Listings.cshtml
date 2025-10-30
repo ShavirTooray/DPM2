@@ -1,0 +1,99 @@
+﻿@model LeaseLink.Controllers.ListingsVm
+@{
+    ViewData["Title"] = "Manager • Listings";
+}
+
+<div class="container py-4">
+    <h2 class="text-white mb-3">Update Listings</h2>
+
+    @if (TempData["Success"] is string ok)
+    {
+        <div class="alert alert-success">@ok</div>
+    }
+
+    <div class="row">
+        <!-- Existing listings table -->
+        <div class="col-lg-7">
+            <div class="table-responsive">
+                <table class="table table-dark table-striped align-middle">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Address</th>
+                            <th>Rent</th>
+                            <th>Status</th>
+                            <th style="width:150px;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var x in Model.Items)
+                        {
+                            <tr>
+                                <td>@x.Id</td>
+                                <td>@x.Title</td>
+                                <td>@x.Address</td>
+                                <td>R @x.Rent.ToString("N0")</td>
+                                <td>@x.Status</td>
+                                <td>
+                                    <form asp-action="ToggleStatus" method="post" class="d-inline">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="id" value="@x.Id" />
+                                        <input type="hidden" name="currentStatus" value="@x.Status" />
+                                        <button class="btn btn-sm btn-secondary">
+                                            @(x.Status == "Active" ? "Pause" : "Activate")
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Add new listing -->
+        <div class="col-lg-5">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Add New Listing</h5>
+
+                    <form asp-action="AddListing" method="post" enctype="multipart/form-data">
+                        @Html.AntiForgeryToken()
+
+                        <div class="mb-2">
+                            <label asp-for="New.Title" class="form-label"></label>
+                            <input asp-for="New.Title" class="form-control" />
+                            <span asp-validation-for="New.Title" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-2">
+                            <label asp-for="New.Address" class="form-label"></label>
+                            <input asp-for="New.Address" class="form-control" />
+                            <span asp-validation-for="New.Address" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-2">
+                            <label asp-for="New.Rent" class="form-label"></label>
+                            <input asp-for="New.Rent" class="form-control" />
+                            <span asp-validation-for="New.Rent" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="New.ImageFile" class="form-label"></label>
+                            <input asp-for="New.ImageFile" type="file" class="form-control" accept="image/*" />
+                            <span asp-validation-for="New.ImageFile" class="text-danger"></span>
+                        </div>
+
+                        <button class="btn btn-ll-beige">Add Listing</button>
+                        <a asp-action="Index" class="btn btn-ll-outline-navy ms-2">Back</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+ }

@@ -1,0 +1,48 @@
+﻿@model LeaseLink.Controllers.TenantSettingsVm
+@{
+    ViewData["Title"] = "Tenant • Settings";
+}
+
+<div class="container py-4">
+    <h2 class="text-white mb-3">Profile Settings</h2>
+
+    @if (TempData["Success"] is string s)
+    {
+        <div class="alert alert-success">@s</div>
+    }
+
+    <form asp-action="Settings" method="post">
+        @Html.AntiForgeryToken()
+
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label text-white"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label text-white"></label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Phone" class="form-label text-white"></label>
+            <input asp-for="Phone" class="form-control" />
+        </div>
+
+        <div class="form-check mb-3">
+            <input asp-for="NotificationsEnabled" class="form-check-input" />
+            <label asp-for="NotificationsEnabled" class="form-check-label text-white">
+                Receive email notifications
+            </label>
+        </div>
+
+        <button class="btn btn-ll-beige">Save Changes</button>
+        <a asp-action="Index" class="btn btn-ll-outline-navy ms-2">Back</a>
+    </form>
+</div>
+
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+ }

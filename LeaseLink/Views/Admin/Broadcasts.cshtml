@@ -1,0 +1,52 @@
+﻿@model LeaseLink.Controllers.BroadcastViewModel
+@{
+    ViewData["Title"] = "Admin • Broadcasts";
+}
+
+<div class="container py-4">
+    <h2 class="text-white mb-3">Send Broadcast</h2>
+
+    @if (TempData["Success"] is string ok)
+    {
+        <div class="alert alert-success">@ok</div>
+    }
+
+    <form asp-action="Broadcasts" method="post">
+        @Html.AntiForgeryToken()
+
+        <div class="mb-3">
+            <label class="form-label text-white">Audience</label>
+            <select asp-for="Audience" class="form-select">
+                <option>All</option>
+                <option>Tenants</option>
+                <option>Managers</option>
+                <option>HigherManagement</option>
+            </select>
+            <span asp-validation-for="Audience" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Subject" class="form-label text-white"></label>
+            <input asp-for="Subject" class="form-control" />
+            <span asp-validation-for="Subject" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Message" class="form-label text-white"></label>
+            <textarea asp-for="Message" rows="6" class="form-control"></textarea>
+            <span asp-validation-for="Message" class="text-danger"></span>
+        </div>
+
+        <div class="form-check mb-3">
+            <input class="form-check-input" asp-for="Urgent" />
+            <label class="form-check-label text-white-50" asp-for="Urgent">Mark as urgent</label>
+        </div>
+
+        <button class="btn btn-ll-beige">Send Broadcast</button>
+        <a asp-action="Index" class="btn btn-ll-outline-navy ms-2">Back</a>
+    </form>
+</div>
+
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+ }

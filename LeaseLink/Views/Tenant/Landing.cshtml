@@ -1,0 +1,125 @@
+﻿@model LeaseLink.Controllers.TenantLandingVm
+@{
+    ViewData["Title"] = "Tenant • Landing";
+}
+
+<div class="container py-4 text-white">
+    <h2 class="mb-2">Welcome!</h2>
+    <p class="mb-3">@Model.WelcomeMessage</p>
+
+    <div class="row g-3">
+        <!-- Snapshot -->
+        <div class="col-lg-4">
+            <div class="card bg-dark border-light h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Account Snapshot</h5>
+                    <p class="mb-1"><strong>Current Lease:</strong> @Model.CurrentLease</p>
+                    <p class="mb-1"><strong>Next Payment:</strong> @Model.NextPaymentDue.ToShortDateString()</p>
+                    <p class="mb-0"><strong>Outstanding:</strong> R @Model.OutstandingBalance.ToString("N2")</p>
+                </div>
+                <div class="card-footer bg-transparent border-light">
+                    <a asp-action="Payment" class="btn btn-ll-beige w-100">Pay Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Announcements -->
+        <div class="col-lg-4">
+            <div class="card bg-dark border-light h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Announcements</h5>
+                    @if (Model.Announcements?.Count > 0)
+                    {
+                        <ul class="list-unstyled mb-0">
+                            @foreach (var a in Model.Announcements)
+                            {
+                                <li class="mb-2">
+                                    <small class="text-muted">@a.Date.ToShortDateString()</small><br />
+                                    @a.Title
+                                </li>
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <p class="text-muted mb-0">No announcements.</p>
+                    }
+                </div>
+            </div><a href="c:\users\user\source\repos\leaselink\leaselink\views\tenant\landing.cshtml">c:\users\user\source\repos\leaselink\leaselink\views\tenant\landing.cshtml</a>
+        </div>
+
+        <!-- Tickets -->
+        <div class="col-lg-4">
+            <div class="card bg-dark border-light h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Open Maintenance Tickets</h5>
+                    @if (Model.OpenTickets?.Count > 0)
+                    {
+                        <ul class="list-unstyled mb-3">
+                            @foreach (var t in Model.OpenTickets)
+                            {
+                                <li class="mb-2 d-flex justify-content-between">
+                                    <span>#@t.Id — @t.Summary</span>
+                                    <span class="badge bg-secondary">@t.Status</span>
+                                </li>
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No open tickets.</p>
+                    }
+
+                    <a asp-action="Maintenance" class="btn btn-ll-beige w-100">Submit Request</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent payments -->
+        <div class="col-12">
+            <div class="card bg-dark border-light">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">Recent Payments</h5>
+                    @if (Model.RecentPayments?.Count > 0)
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-dark table-sm align-middle mb-0">
+                                <thead>
+                                    <tr>
+                                        <th style="width:160px;">Date</th>
+                                        <th style="width:220px;">Amount</th>
+                                        <th>Method</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var p in Model.RecentPayments)
+                                    {
+                                        <tr>
+                                            <td>@p.Date.ToShortDateString()</td>
+                                            <td>R @p.Amount.ToString("N2")</td>
+                                            <td>@p.Method</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted mb-0">No payments found.</p>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick actions -->
+        <div class="col-12">
+            <div class="d-flex flex-wrap gap-2 mt-3">
+                <a asp-action="Payment" class="btn btn-ll-beige">Make Payment</a>
+                <a asp-action="Maintenance" class="btn btn-ll-beige">Maintenance Request</a>
+                <a asp-action="Settings" class="btn btn-ll-beige">Update Profile</a>
+                <a asp-action="Index" class="btn btn-ll-outline-navy">Back</a>
+            </div>
+        </div>
+    </div>
+</div>

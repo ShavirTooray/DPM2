@@ -1,0 +1,52 @@
+﻿@model LeaseLink.Controllers.ManagerDashboardVm
+@{
+    ViewData["Title"] = "Manager • Dashboard";
+}
+<div class="container py-4">
+    <h2 class="text-white mb-4">Overview</h2>
+
+    <div class="row g-3">
+        <div class="col-6 col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="text-beige small">Active Listings</div>
+                    <div class="h3 mb-0">@Model.ActiveListings</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="text-beige small">Pending Applications</div>
+                    <div class="h3 mb-0">@Model.PendingApplications</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="text-beige small">Leases Expiring (30d)</div>
+                    <div class="h3 mb-0">@Model.LeasesExpiringThisMonth</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="text-beige small">Open Maintenance Tickets</div>
+                    <div class="h3 mb-0">@Model.OpenMaintenanceTickets</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="text-beige small">Overdue Reminders</div>
+                    <div class="h3 mb-0">@Model.OverdueReminders</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a asp-action="Index" class="btn btn-ll-outline-navy mt-4">Back</a>
+</div>

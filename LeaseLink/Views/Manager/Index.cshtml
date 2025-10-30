@@ -3,12 +3,13 @@
 }
 <div class="container py-4">
     <h2 class="text-white mb-4">Property Manager</h2>
-    <div class="row g-3">
-        <div class="col-md-4"><a class="btn btn-ll-beige w-100 py-3">Dashboard View</a></div>
-        <div class="col-md-4"><a class="btn btn-ll-beige w-100 py-3">Update Listings</a></div>
-        <div class="col-md-4"><a class="btn btn-ll-beige w-100 py-3">Manage Leases</a></div>
-        <div class="col-md-4"><a class="btn btn-ll-beige w-100 py-3">Respond to AI Escalations</a></div>
-        <div class="col-md-4"><a class="btn btn-ll-beige w-100 py-3">Send Reminders</a></div>
-        <div class="col-md-4"><a class="btn btn-ll-outline-navy w-100 py-3" asp-controller="Account" asp-action="Logout">Log out</a></div>
+
+    <div class="row gy-3">
+        <div class="col-md-4"><a asp-action="Dashboard" class="btn btn-ll-beige w-100 py-3">Dashboard View</a></div>
+        <div class="col-md-4"><a asp-action="Listings" class="btn btn-ll-beige w-100 py-3">Update Listings</a></div>
+        <div class="col-md-4"><a asp-action="Leases" class="btn btn-ll-beige w-100 py-3">Manage Leases</a></div>
+        <div class="col-md-4"><a asp-action="AIEscalations" class="btn btn-ll-beige w-100 py-3">Respond to AI Escalations</a></div>
+        <div class="col-md-4"><a asp-action="Reminders" class="btn btn-ll-beige w-100 py-3">Send Reminders</a></div>
+        <div class="col-md-4"><a asp-controller="Account" asp-action="Logout" class="btn btn-ll-outline-navy w-100 py-3">Log out</a></div>
     </div>
 </div>

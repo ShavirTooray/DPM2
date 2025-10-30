@@ -1,0 +1,34 @@
+﻿@model LeaseLink.Controllers.PaymentVm
+@{
+    ViewData["Title"] = "Tenant • Make Payment";
+}
+
+<div class="container py-4 text-white">
+    <h2 class="mb-3">Make a Payment</h2>
+
+    @if (TempData["Success"] is string success)
+    {
+        <div class="alert alert-success">@success</div>
+    }
+
+    <div class="card bg-dark border-light p-3 mb-4">
+        <p><strong>Tenant:</strong> @Model.TenantName</p>
+        <p><strong>Amount Due:</strong> R @Model.AmountDue.ToString("N2")</p>
+        <p><strong>Due Date:</strong> @Model.DueDate.ToShortDateString()</p>
+    </div>
+
+    <form asp-action="Payment" method="post">
+        @Html.AntiForgeryToken()
+        <div class="mb-3">
+            <label asp-for="AmountPaid" class="form-label text-white"></label>
+            <input asp-for="AmountPaid" class="form-control" />
+            <span asp-validation-for="AmountPaid" class="text-danger"></span>
+        </div>
+        <button class="btn btn-ll-beige">Submit Payment</button>
+        <a asp-action="Index" class="btn btn-ll-outline-navy ms-2">Back</a>
+    </form>
+</div>
+
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+ }

@@ -1,0 +1,59 @@
+﻿@model LeaseLink.Controllers.AdminDashboardViewModel
+@{
+    ViewData["Title"] = "Admin • Dashboard";
+}
+
+<div class="container py-4">
+    <h2 class="text-white mb-4">Overview</h2>
+
+    <div class="row g-3">
+        <div class="col-6 col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="text-beige small">Tenants</div>
+                    <div class="h3 mb-0">@Model.TotalTenants</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="text-beige small">Managers</div>
+                    <div class="h3 mb-0">@Model.TotalManagers</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="text-beige small">Properties</div>
+                    <div class="h3 mb-0">@Model.TotalProperties</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="text-beige small">Open Escalations</div>
+                    <div class="h3 mb-0">@Model.OpenEscalations</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="text-beige small">Pending Applications</div>
+                    <div class="h3 mb-0">@Model.PendingApplications</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="text-beige small">Occupancy Rate</div>
+                    <div class="h3 mb-0">@Model.OccupancyRatePercent%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<LeaseLink.Controllers.LeaseRowVm>
+@{
+    ViewData["Title"] = "Manager • Leases";
+}
+<div class="container py-4">
+    <h2 class="text-white mb-3">Manage Leases</h2>
+
+    @if (TempData["Success"] is string ok)
+    {
+        <div class="alert alert-success">@ok</div>
+    }
+
+    <div class="table-responsive">
+        <table class="table table-dark table-striped align-middle">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tenant</th>
+                    <th>Property</th>
+                    <th>Ends</th>
+                    <th>Status</th>
+                    <th style="width:240px;">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var l in Model)
+                {
+                    <tr>
+                        <td>@l.Id</td>
+                        <td>@l.Tenant</td>
+                        <td>@l.Property</td>
+                        <td>@l.Ends.ToLocalTime().ToShortDateString()</td>
+                        <td>@l.Status</td>
+                        <td>
+                            <form asp-action="ApproveRenewal" method="post" class="d-inline">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@l.Id" />
+                                <button class="btn btn-success btn-sm">Approve Renewal</button>
+                            </form>
+                            <form asp-action="Terminate" method="post" class="d-inline ms-1">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@l.Id" />
+                                <button class="btn btn-danger btn-sm">Terminate</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <a asp-action="Index" class="btn btn-ll-outline-navy mt-2">Back</a>
+</div>
