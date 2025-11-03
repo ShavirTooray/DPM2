@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LeaseLink")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed7ad773b9418632adbbbd9d38ba4a02d9f10179")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a06fe3b64699e2a227acca9c628b8b29599a8e5d")]
 [assembly: System.Reflection.AssemblyProductAttribute("LeaseLink")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LeaseLink")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
